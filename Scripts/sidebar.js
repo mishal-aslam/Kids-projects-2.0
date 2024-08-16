@@ -10,3 +10,7 @@ const urlParams = new URLSearchParams(window.location.search);
 if (urlParams.get('sidebar') === 'open') {
   document.querySelector('.sidebar').classList.add('active');
 }
+
+function navigateAlphaMain() {
+  window.location.href = "alphabetsMain.html";
+}
