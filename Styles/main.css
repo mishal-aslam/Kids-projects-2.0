@@ -1,3 +1,24 @@
 .overlay-image {
     position: absolute;
 }
+
+/* Add this to your CSS file */
+
+/* Make the images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Add a media query to adjust styles for mobile devices */
+@media only screen and (max-width: 768px) {
+  /* Adjust the position and size of the overlay images for mobile */
+  .overlay-image {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    margin: 10px auto;
+  }
+
+ 
+}
