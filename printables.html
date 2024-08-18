@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- side bar  -->
-    <div class="sidebar">
+    <div class="sidebar z-20">
         <div class="logo_content">
             <div class="logo">
 
@@ -98,25 +98,51 @@
     </div>
 
 <!-- learn it section  -->
-<img src="./Assets/bg 1.png" alt="greenBoard" class="h-screen w-[100%]"  >
+<div class="relative h-screen w-[100%]">
+    <img src="./Assets/bg 1.png" alt="greenBoard" class="absolute h-screen w-[100%] z-0">
 
-<a href="page1.html">
-  <img src="./Assets/shutdown 1.png" alt="image1" class="overlay-image h-[60px] w-[60px]" style="top: 3%; right: 10%; z-index: 10;">
-</a>
-<a href="alphabets.html">
-  <img src="./Assets/previous 2.png" alt="image2" class="overlay-image h-[60px] w-[60px]" style="top: 3%; right: 70px; z-index: 10;">
-</a>
+    <!-- top section  -->
+    <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 h-screen md:px-80 pl-16 z-10 md:pt-0 pt-14">
 
+        <div class="flex justify-center mt-12 md:mt-0 items-center" onclick="openModal('./Assets/level 1 (1).pdf')">
+          <img src="./Assets/Level 1.png" alt="image3" class="overlay-image h-[31px] w-[143px] md:bottom-[200px] bottom-[490px]  z-2">
+          <img src="Assets/image 1.png" alt="" class="overlay-image md:h-[272px] h-[200px] md:w-[206px] z-5 -ml-1/2">
+        </div>
+      
+        <div class="flex justify-center items-center mb-12 md:mb-0" onclick="openModal('./Assets/level 2.pdf')">
+          <img src="./Assets/Level 2.png" alt="image4" class="overlay-image h-[35px]  md:bottom-[200px] bottom-[250px] w-[152px] z-3">
+          <img src="Assets/image 2.png" alt=""  class="overlay-image md:h-[272px] h-[200px] md:w-[206px] mt-12 md:mt-0 z-5 -ml-1/2">
+        </div>
+      
+        <div class="flex justify-center items-center mb-12 md:mb-0" onclick="openModal('./Assets/level 3.pdf')">
+          <img src="./Assets/Level 3.png" alt="image4" class="overlay-image h-[35px]  md:bottom-[200px] bottom-[4px] w-[152px] z-3">
+          <img src="Assets/image 4.png" alt=""  class="overlay-image md:h-[272px] md:w-[206px] h-[200px] z-5 -ml-1/2">
+        </div>
+      </div>      
+      
+      <!-- Modal -->
+      <div id="modal" class="fixed hidden inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+        <embed id="pdf-viewer" src="" type="application/pdf" width="100%" height="100%">
+      </div>
+      
+      <script>
+        function openModal(pdfSrc) {
+          document.getElementById('modal').classList.remove('hidden');
+          document.getElementById('pdf-viewer').src = pdfSrc;
+        }
+      
+        document.getElementById('modal').addEventListener('click', function() {
+          this.classList.add('hidden');
+        });
+      </script>
 
-<img src="./Assets/Level 1.png" alt="image3" class="overlay-image h-[31px] w-[143px]" style="top: 59%; left: 24.5%; z-index: 2;">
-<img src="Assets/image 1.png" alt=""class="overlay-image  h-[272px] w-[206px] " style="top: 22%; left: 29%; transform: translateX(-50%); z-index: 5;">
-
-<img src="./Assets/Level 2.png" alt="image4" class="overlay-image h-[35px] w-[152px]" style="top: 59%; left: 47%; z-index: 3;">
-<img src="Assets/image 2.png" alt="" class="overlay-image  h-[272px] w-[206px] " style="top: 22%; left: 52%; transform: translateX(-50%); z-index: 5;">
-
-<img src="./Assets/Level 3.png" alt="image4" class="overlay-image h-[35px] w-[152px]" style="top: 59%; left: 70%; z-index: 3;">
-<img src="Assets/image 4.png" alt="" class="overlay-image  h-[272px] w-[206px] " style="top: 22%; left: 75%; transform: translateX(-50%); z-index: 5;">
-
+    <a href="page1.html">
+        <img src="./Assets/shutdown 1.png" alt="image1" class="overlay-image h-[60px] w-[60px] top-[3%] right-[10%] z-index-10">
+    </a>
+    <a href="page2.html">
+        <img src="./Assets/previous 2.png" alt="image2" class="overlay-image h-[60px] w-[60px] top-[3%] md:right-[70px] right-[110px] z-index-10">
+    </a>
+</div>
 
 
     <script src="Scripts/sidebar.js"></script>
