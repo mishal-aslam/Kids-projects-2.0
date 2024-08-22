@@ -106,14 +106,14 @@
     <!-- top section  -->
     <div class="grid md:grid-cols-2 grid-cols-1 gap-4 h-screen md:px-80 pl-16 z-10">
         <div class="flex justify-center mt-12 md:mt-0 items-center">
-            <img src="./Assets/ABC.png" alt="image3" class="overlay-image h-[31px] w-[143px] md:bottom-[260px] bottom-[470px]  z-2">
+            <img src="./Assets/ABC.png" alt="image3" class="overlay-image h-[31px] w-[143px] md:bottom-[230px] bottom-[470px]  z-2">
             <img src="./Assets/image 6.png" alt="" class="overlay-image h-[155px] w-[233px] z-5 -ml-1/2">
             <a href="./Assets/say it alphabets.mp4" class="mr-14 mb-12">
                 <img src="./Assets/youtube 3.png" class="absolute" alt="">
             </a>
         </div>
         <div class="flex justify-center items-center mb-12 md:mb-0">
-            <img src="./Assets/Vowels.png" alt="image4" class="overlay-image h-[35px]  md:bottom-[260px] bottom-[80px] w-[152px] z-3">
+            <img src="./Assets/Vowels.png" alt="image4" class="overlay-image h-[35px]  md:bottom-[230px] bottom-[80px] w-[152px] z-3">
             <img src="./Assets/image 7.png" alt="" class="overlay-image h-[155px] w-[233px]  z-5 -ml-1/2">
             <img src="./Assets/youtube 3.png" class="absolute" alt="">
         </div>
@@ -140,30 +140,58 @@
           <img src="./Assets/Ellipse 6.png" alt="" class="absolute  -translate-x-1/2 translate-y-1/2 bottom-[70px] right-[-220px]">
           <img src="./Assets/Ellipse 4.png" alt="" class="absolute bottom-[20px] right-[-150px]">
 
-          <img src="./Assets/Feeling Hungry_ Time for a quick snack.png" class="mx-auto md:mt-5 mt-12   md:w-auto w-[300px]" alt="">
+          <img src="./Assets/Feeling Hungry_ Time for a quick snack.png" class="mx-auto md:mt-5 mt-32 md:w-auto w-[300px]" alt="">
   
           <div class="flex justify-center mb-4">
               <div class="grid md:grid-cols-5 grid-cols-3  md:gap-x-16 gap-x-8  mt-10 rounded-lg overflow-hidden gap-y-12">
-                <img src="./Assets/apple.gif" alt="" class="md:h-[100px] md:w-[100px] h-[80px] w-[80px] rounded-full border-[1px] border-[#F87692]">
-                <img src="./Assets/banana.gif" alt="" class="md:h-[100px] md:w-[100px] h-[80px] w-[80px] rounded-full border-[1px] border-[#F87692]">
-                <img src="./Assets/biscuit.gif" alt="" class="h-[100px] w-[100px] rounded-full border-[1px] border-[#F87692]">
-                <img src="./Assets/bread.gif" alt="" class="md:h-[100px] md:w-[100px] h-[80px] w-[80px] rounded-full border-[1px] border-[#F87692]">
-                <img src="./Assets/mango.gif" alt="" class="md:h-[100px] md:w-[100px] h-[80px] w-[80px] rounded-full border-[1px] border-[#F87692]">
-                <img src="./Assets/carrot.gif" alt="" class="md:h-[100px] md:w-[100px] h-[80px] w-[80px] rounded-full border-[1px] border-[#F87692]">
-                <img src="./Assets/chocolate-milk.gif" alt="" class="md:h-[100px] md:w-[100px] h-[80px] w-[80px] rounded-full border-[1px] border-[#F87692]">
-                <img src="./Assets/juice.gif" alt="" class="md:h-[100px] md:w-[100px] h-[80px] w-[80px] rounded-full border-[1px] border-[#F87692]">
-                <img src="./Assets/strawberry.gif" alt="" class="md:h-[100px] md:w-[100px] h-[80px] w-[80px] rounded-full border-[1px] border-[#F87692]">
-                <img src="./Assets/tomato.gif" alt="" class="md:h-[100px] md:w-[100px] h-[80px] w-[80px] rounded-full border-[1px] border-[#F87692]">
-                <img src="./Assets/rice.gif" alt="" class="md:h-[100px] md:w-[100px] h-[80px] w-[80px] rounded-full border-[1px] border-[#F87692]">
-                <img src="./Assets/rolling-pin.gif" alt="" class="md:h-[100px] md:w-[100px] h-[80px] w-[80px] rounded-full border-[1px] border-[#F87692]">
-                <img src="./Assets/sandwich.gif" alt="" class="md:h-[100px] md:w-[100px] h-[80px] w-[80px] rounded-full border-[1px] border-[#F87692]">
-                <img src="./Assets/tea-egg.gif" alt="" class="md:h-[100px] md:w-[100px] h-[80px] w-[80px] rounded-full border-[1px] border-[#F87692]">
+                <img src="./Assets/apple.gif" alt="" data-food="apple" class="md:h-[100px] md:w-[100px] h-[80px] w-[80px] rounded-full border-[1px] border-[#F87692]">
+                <img src="./Assets/banana.gif" alt="" class="md:h-[100px] md:w-[100px] h-[80px] w-[80px] rounded-full border-[1px] border-[#F87692]" data-food="banana">
+                <img src="./Assets/biscuit.gif" alt="" class="h-[100px] w-[100px] rounded-full border-[1px] border-[#F87692]" data-food="biscuit">
+                <img src="./Assets/bread.gif" alt="" class="md:h-[100px] md:w-[100px] h-[80px] w-[80px] rounded-full border-[1px] border-[#F87692]" data-food="bread">
+                <img src="./Assets/mango.gif" alt="" class="md:h-[100px] md:w-[100px] h-[80px] w-[80px] rounded-full border-[1px] border-[#F87692]" data-food="mango">
+                <img src="./Assets/carrot.gif" alt="" class="md:h-[100px] md:w-[100px] h-[80px] w-[80px] rounded-full border-[1px] border-[#F87692]" data-food="carrot">
+                <img src="./Assets/chocolate-milk.gif" alt="" class="md:h-[100px] md:w-[100px] h-[80px] w-[80px] rounded-full border-[1px] border-[#F87692]" data-food="chocolate-milk">
+                <img src="./Assets/juice.gif" alt="" class="md:h-[100px] md:w-[100px] h-[80px] w-[80px] rounded-full border-[1px] border-[#F87692]" data-food="juice">
+                <img src="./Assets/strawberry.gif" alt="" class="md:h-[100px] md:w-[100px] h-[80px] w-[80px] rounded-full border-[1px] border-[#F87692]" data-food="strawberry">
+                <img src="./Assets/tomato.gif" alt="" class="md:h-[100px] md:w-[100px] h-[80px] w-[80px] rounded-full border-[1px] border-[#F87692]" data-food="tomato">
+                <img src="./Assets/rice.gif" alt="" class="md:h-[100px] md:w-[100px] h-[80px] w-[80px] rounded-full border-[1px] border-[#F87692]" data-food="rice">
+                <img src="./Assets/rolling-pin.gif" alt="" class="md:h-[100px] md:w-[100px] h-[80px] w-[80px] rounded-full border-[1px] border-[#F87692]" data-food="rolling-pin">
+                <img src="./Assets/sandwich.gif" alt="" class="md:h-[100px] md:w-[100px] h-[80px] w-[80px] rounded-full border-[1px] border-[#F87692]" data-food="sandwich">
+                <img src="./Assets/tea-egg.gif" alt="" class="md:h-[100px] md:w-[100px] h-[80px] w-[80px] rounded-full border-[1px] border-[#F87692]" data-food="tea-egg">
               </div>
             </div>
       </div>
   </div>
   </div>
 
+
+  <div id="popup" class="hidden fixed top-1/2 left-1/2 transform  -translate-x-1/2 -translate-y-1/2 bg-white bg-opacity-50 backdrop-blur-sm p-8 rounded-lg shadow-2xl w-[500px] h-[300px] z-[1000]">
+    <div class="flex flex-col items-center justify-center h-full">
+      <p id="popup-message" class="text-[#53C8C1] font-bold text-4xl mb-8">Enjoy your meal!</p>
+      <a href="./sayIt.html">
+          <button id="continue-btn" class="bg-[#53C8C1] hover:bg-[#34908C] text-white text-lg font-bold py-4 px-8 rounded-full">
+              Continue Learning
+            </button>
+        </a>
+    </div>
+  </div>
+
+  <script>
+    const foodImages = document.querySelectorAll('img[data-food]');
+    foodImages.forEach((image) => {
+      image.addEventListener('click', () => {
+        // Get the food name from the data attribute
+        const food = image.getAttribute('data-food');
+  
+        // Show the popup with the food name
+        document.getElementById('popup').classList.remove('hidden');
+        document.getElementById('popup-message').innerHTML = `Enjoy your ${food}!`;
+        document.getElementById('continue-btn').addEventListener('click', () => {
+          document.getElementById('popup').classList.add('hidden');
+        });
+      });
+    });
+  </script>
 
 <script>
    window.onload = function() {
@@ -172,7 +200,7 @@
   setTimeout(function() {
     breakTimeScreen.style.display = 'block';
     breakTimeScreen.classList.add('shown');
-  }, 25000);
+  }, 15000);
 }
 </script>
     <script src="./Scripts/sidebar.js"></script>
