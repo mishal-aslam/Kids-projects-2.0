@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="flex">
+      <!-- left side -->
+      <div class="w-[45%] border-black h-screen md:block hidden bg-[#FFF7EF]">
+        <img
+          src="./Assets/Create an account.png"
+          alt=""
+          class="mx-auto mt-12"
+        />
+        <div class="z-10 text-center w-full md:px-24 px-5">
+          <p
+            class="text-xl text-start text-[#000000] mb-2 mt-5"
+            style="font-weight: 500"
+          >
+            Name
+          </p>
+          <input
+            type="email"
+            class="w-full px-4 py-2 mb-2 text-lg rounded-xl shadow-md shadow-gray-300 focus:outline-none focus:ring-0"
+            required
+          />
+
+          <div class="md:flex justify-between mb-2 mt-3">
+            <div class="w-full md:mr-24">
+              <p
+                class="text-xl text-start text-[#000000] mb-1"
+                style="font-weight: 500"
+              >
+                Age
+              </p>
+              <input
+                type="number"
+                class="w-full px-4 py-2 text-lg rounded-xl shadow-md shadow-gray-300 focus:outline-none focus:ring-0"
+                required
+              />
+            </div>
+            <div class="w-full">
+              <p
+                class="text-xl text-start text-[#000000] mb-1"
+                style="font-weight: 500"
+              >
+                Gender
+              </p>
+              <select
+                class="w-full px-4 py-2 text-lg rounded-xl shadow-md shadow-gray-300 focus:outline-none focus:ring-0"
+                required
+              >
+                <option value=""></option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+          </div>
+
+          <p
+            class="text-xl text-start text-[#000000] mb-1 mt-5"
+            style="font-weight: 500"
+          >
+            Mobile Number
+          </p>
+          <input
+            type="tel"
+            class="w-full px-4 py-2 mb-2 text-lg rounded-xl shadow-md shadow-gray-300 focus:outline-none focus:ring-0"
+            required
+          />
+
+          <p
+            class="text-xl text-start text-[#000000] mb-1 mt-4"
+            style="font-weight: 500"
+          >
+            Email Address
+          </p>
+          <input
+            type="email"
+            class="w-full px-4 py-2 mb-2 text-lg rounded-xl shadow-md shadow-gray-300 focus:outline-none focus:ring-0"
+            required
+          />
+
+          <p
+            class="text-xl text-start text-[#000000] mb-1 mt-4"
+            style="font-weight: 500"
+          >
+            Set Password
+          </p>
+          <input
+            type="password"
+            class="w-full px-4 py-2 mb-2 text-lg rounded-xl shadow-md shadow-gray-300 focus:outline-none focus:ring-0"
+            required
+          />
+
+          <p
+            class="text-xl text-start text-[#000000] mb-1 mt-4"
+            style="font-weight: 500"
+          >
+            Confirm Password
+          </p>
+          <input
+            type="password"
+            class="w-full px-4 py-2 mb-2 text-lg rounded-xl shadow-md shadow-gray-300 focus:outline-none focus:ring-0"
+            required
+          />
+
+          <button
+            class="px-40 py-2.5 text-lg font-bold text-white rounded-xl mb-4 bg-[#53C8C1] mt-6"
+            onclick="validateForm()"
+          >
+            Sign Up
+          </button>
+        </div>
+      </div>
+
+      <!-- right side  -->
+      <div
+      class="relative md:w-[55%] w-full h-screen flex justify-center items-center bg-green-400"
+    >
+      <img
+        src="./Assets/Pinata.png"
+        alt=""
+        class="absolute top-0 left-7 z-10"
+      />
+      <img src="./Assets/q643_o2wt_170420 1.png" alt="" class="w-full h-full z-0" />
+    </div>
+
+
+    <script>
+        function validateForm() {
+          var name = document.querySelector('input[type="email"]').value;
+          var age = document.querySelector('input[type="number"]').value;
+          var gender = document.querySelector('select').value;
+          var mobileNumber = document.querySelector('input[type="tel"]').value;
+          var email = document.querySelector('input[type="email"]').value;
+          var password = document.querySelector('input[type="password"]').value;
+          var confirmPassword = document.querySelector('input[type="password"]').value;
+      
+          if (
+            name &&
+            age &&
+            gender &&
+            mobileNumber &&
+            email &&
+            password &&
+            confirmPassword
+          ) {
+            location.href = 'welcome.html'; 
+          } else {
+            alert('Please fill in all fields');
+          }
+        }
+      </script>
+      
+  </body>
+</html>

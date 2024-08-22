@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="flex">
+    <!-- left side -->
+    <div class="w-[55%]  border-black h-screen md:block hidden"></div>
+    <!-- right side  -->
+    <div class="relative md:w-[45%] w-full h-screen flex justify-center items-center">
+      <img src="../Assets/3.png" alt="Image 3" class="absolute top-0 left-0 w-full h-full" />
+      <img src="../Assets/2.png" alt="Image 2" class="absolute top-0 left-0 w-full h-full" />
+      <img src="../Assets/1.png" alt="Image 1" class="absolute top-0 left-0 w-full h-full" />
+
+
+      <div class="z-10 text-center w-full md:px-24 px-5">
+        <img src="./Assets/Hatching-chick.png" alt="" class="mx-auto -mt-16 mb-3">
+        <img src="../Assets/Welcome back.png" alt="" class=" mx-auto">
+
+        <p class="text-xl font-medium mt-2 text-black mb-6">Please Enter your details</p>
+
+        <p class="text-xl text-start text-[#000000] mb-2" style="font-weight: 500;">Enter your email </p>
+
+        <input type="email" class="w-full px-4 py-2 mb-2 text-lg border-[#53C8C1] border rounded-md " required />
+
+        <p class="text-xl text-start text-[#000000] mb-2 mt-2" style="font-weight: 500;">Enter your password</p>
+
+        <input type="password" class="w-full px-4 py-2 mb-4 text-lg border-[#53C8C1] border rounded-md" required />
+
+        <div class="flex justify-between mb-6 mt-2 ">
+          <div class="flex items-center">
+            <input type="checkbox" id="remember" class="mr-2" />
+            <label for="remember" class="text-lg text-[#000000] font-medium">Remember Password</label>
+          </div>
+          <a href="#" class="text-lg text-[#000000] font-medium">Forget Password?</a>
+        </div>
+        <button class="md:px-40 px-36 py-2.5 text-lg font-bold text-white rounded-md mb-4 bg-[#53C8C1]" onclick="validateForm()">
+          Login
+        </button>
+        <p class="text-lg text-black font-medium">
+          Don't have an account?
+          <a href="#" onclick="location.href='signup.html'" class="hover:underline">Sign up</a>
+        </p>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script>
+    function validateForm() {
+      var email = document.querySelector('input[type="email"]').value;
+      var password = document.querySelector('input[type="password"]').value;
+
+      if (email && password) {
+        location.href = 'categories.html';
+      } else {
+        alert('Please fill in both email and password fields');
+      }
+    }
+  </script>
+</body>
+
+</html>
