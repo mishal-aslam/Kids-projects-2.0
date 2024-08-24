@@ -1,152 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learn Alphabets</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="Styles/main.css">
-    <link rel="stylesheet" href="Styles/sidebar.css">
-</head>
-<body>
+    <link rel="stylesheet" href="Styles/main.css" />
+    <link rel="stylesheet" href="Styles/sidebar.css" />
+  </head>
+  <body>
     <!-- side bar  -->
     <div class="sidebar z-20">
-        <div class="logo_content">
-            <div class="logo">
-
-                <img
-                src="./Assets/Component 1.png" /> 
-            </div>
-            <img src="./Assets/Component 1 (1).png" id="btn" alt="">
+      <div class="logo_content">
+        <div class="logo">
+          <img src="./Assets/Component 1.png" />
         </div>
-        <ul class="nav_list">
-            <li>
-                <a href="#" onclick="location.href='./categories.html?sidebar=open'">
-                    <img src="./Assets/Cloud Folder.png" alt="">
-                    <span class="links_name">Categories</span>
-                </a>
-                <span class="tooltip">Categories</span>
-            </li>
+        <img src="./Assets/Component 1 (1).png" id="btn" alt="" />
+      </div>
+      <ul class="nav_list">
+        <li>
+          <a href="#" onclick="location.href='./categories.html?sidebar=open'">
+            <img src="./Assets/Cloud Folder.png" alt="" />
+            <span class="links_name">Categories</span>
+          </a>
+          <span class="tooltip">Categories</span>
+        </li>
 
+        <li>
+          <a href="#" onclick="location.href='./alphabetsMain.html'">
+            <img src="./Assets/Font Size.png" alt="" />
+            <span class="links_name">Alphabets</span>
+          </a>
+          <span class="tooltip">Alphabets</span>
+        </li>
 
-            <li>
-                <a href="#" onclick="location.href='./alphabetsMain.html'">
-                    <img src="./Assets/Font Size.png" alt="">
-                    <span class="links_name">Alphabets</span>
-                </a>
-                <span class="tooltip">Alphabets</span>
-            </li>
+        <li>
+          <a href="#" onclick="location.href='./numbersMain.html'">
+            <img src="./Assets/Numbers (1).png" alt="" />
+            <span class="links_name">Numbers</span>
+          </a>
+          <span class="tooltip">Numbers</span>
+        </li>
 
+        <li>
+          <a href="#" onclick="location.href='./shapesMain.html'">
+            <img src="./Assets/Workflow.png" alt="" />
+            <span class="links_name">Shapes</span>
+          </a>
+          <span class="tooltip">Shapes</span>
+        </li>
 
-            <li>
-                <a href="#" onclick="location.href='./numbersMain.html'">
-                    <img src="./Assets/Numbers (1).png" alt="">
-                    <span class="links_name">Numbers</span>
-                </a>
-                <span class="tooltip">Numbers</span>
-            </li>
+        <li>
+          <a href="#" onclick="location.href='./colorMain.html'">
+            <img src="./Assets/Paint Bucket.png" alt="" />
+            <span class="links_name">Colors</span>
+          </a>
+          <span class="tooltip">Colors</span>
+        </li>
 
+        <li>
+          <a href="#" onclick="location.href='./bodyPartsMain.html'">
+            <img src="./Assets/Leg.png" alt="" />
+            <span class="links_name">Body Parts</span>
+          </a>
+          <span class="tooltip">Body Parts</span>
+        </li>
 
-            <li>
-                <a href="#" onclick="location.href='./shapesMain.html'">
-                    <img src="./Assets/Workflow.png" alt="">
-                    <span class="links_name">Shapes</span>
-                </a>
-                <span class="tooltip">Shapes</span>
-            </li>
+        <li>
+          <a href="#" onclick="location.href='./vegetablesMain.html'">
+            <img src="./Assets/Broccoli.png" alt="" />
+            <span class="links_name">Vegetables</span>
+          </a>
+          <span class="tooltip">Vegetables</span>
+        </li>
 
-
-            <li>
-                <a href="#" onclick="location.href='./colorMain.html'">
-                    <img src="./Assets/Paint Bucket.png" alt="">
-                    <span class="links_name">Colors</span>
-                </a>
-                <span class="tooltip">Colors</span>
-            </li>
-
-
-            <li>
-                <a href="#" onclick="location.href='./bodyPartsMain.html'">
-                    <img src="./Assets/Leg.png" alt="">
-                    <span class="links_name">Body Parts</span>
-                </a>
-                <span class="tooltip">Body Parts</span>
-            </li>
-
-
-            <li>
-                <a href="#" onclick="location.href='./vegetablesMain.html'">
-                    <img src="./Assets/Broccoli.png" alt="">
-                    <span class="links_name">Vegetables</span>
-                </a>
-                <span class="tooltip">Vegetables</span>
-            </li>
-
-
-            <li>
-                <a href="#" onclick="location.href='./fruitsMain.html'">
-                    <img src="./Assets/Watermelon.png" alt="">
-                    <span class="links_name">Fruits</span>
-                </a>
-                <span class="tooltip">Fruits</span>
-            </li>
-
-
-        </ul>
-
-    
+        <li>
+          <a href="#" onclick="location.href='./fruitsMain.html'">
+            <img src="./Assets/Watermelon.png" alt="" />
+            <span class="links_name">Fruits</span>
+          </a>
+          <span class="tooltip">Fruits</span>
+        </li>
+      </ul>
     </div>
 
+    <!-- learn it section -->
+    <div id="learn-section" class="relative h-screen w-[100%]">
+      <img
+        src="./Assets/bg 1.png"
+        alt="greenBoard"
+        class="absolute h-screen w-[100%] z-0"
+      />
 
-<!-- learn it section  -->
-<div class="relative h-screen w-[100%]">
-    <img src="./Assets/bg 1.png" alt="greenBoard" class="absolute h-screen w-[100%] z-0">
+      <!-- top section -->
+      <div
+        class="grid grid-cols-1 md:grid-cols-3 pt-24 md:flex md:pt-0 ml-24 md:ml-0 justify-center items-center h-screen relative z-20 overflow-y-auto"
+      >
+        <!-- level 1  -->
+        <div
+          onclick="openModal('./Assets/level 1 (1).pdf')"
+          class="flex flex-col items-center justify-center mr-4 md:mr-8"
+        >
+          <img
+            src="./Assets/image 1.png"
+            alt=""
+            class="md:h-[272px] h-[200px] md:w-[206px] z-5 -ml-1/2"
+          />
+          <img
+            src="./Assets/Level 1.png"
+            alt="image3"
+            class="h-[31px] w-[143px] md:mt-4 my-2"
+          />
+        </div>
 
-    <!-- top section  -->
-    <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 h-screen md:px-80 pl-16 z-10 md:pt-0 pt-14">
-
-        <div class="flex justify-center mt-12 md:mt-0 items-center" onclick="openModal('./Assets/level 1 (1).pdf')">
-          <img src="./Assets/Level 1.png" alt="image3" class="overlay-image h-[31px] w-[143px] md:bottom-[180px] bottom-[490px]  z-2">
-          <img src="./Assets/image 1.png" alt="" class="overlay-image md:h-[272px] h-[200px] md:w-[206px] z-5 -ml-1/2">
+        <!-- level 2  -->
+        <div
+          onclick="openModal('./Assets/level 2.pdf')"
+          class="flex flex-col items-center justify-center mr-4 md:mr-8"
+        >
+          <img
+            src="./Assets/image 2.png"
+            alt=""
+            class="md:h-[272px] h-[200px] md:w-[206px] z-5 -ml-1/2"
+          />
+          <img
+            src="./Assets/Level 2.png"
+            alt="image3"
+            class="h-[31px] w-[143px] md:mt-4 my-2"
+          />
         </div>
-      
-        <div class="flex justify-center items-center mb-12 md:mb-0" onclick="openModal('./Assets/level 2.pdf')">
-          <img src="./Assets/Level 2.png" alt="image4" class="overlay-image h-[35px]  md:bottom-[180px] bottom-[250px] w-[152px] z-3">
-          <img src="./Assets/image 2.png" alt=""  class="overlay-image md:h-[272px] h-[200px] md:w-[206px] mt-12 md:mt-0 z-5 -ml-1/2">
+        <!-- level 3 -->
+        <div
+          onclick="openModal('./Assets/level 3.pdf')"
+          class="flex flex-col items-center justify-center"
+        >
+          <img
+            src="./Assets/image 4.png"
+            alt=""
+            class="md:h-[272px] h-[200px] md:w-[206px] z-5 -ml-1/2"
+          />
+          <img
+            src="./Assets/Level 3.png"
+            alt="image3"
+            class="h-[31px] w-[143px] md:mt-4 my-2"
+          />
         </div>
-      
-        <div class="flex justify-center items-center mb-12 md:mb-0" onclick="openModal('./Assets/level 3.pdf')">
-          <img src="./Assets/Level 3.png" alt="image4" class="overlay-image h-[35px]  md:bottom-[180px] bottom-[4px] w-[152px] z-3">
-          <img src="./Assets/image 4.png" alt=""  class="overlay-image md:h-[272px] md:w-[206px] h-[200px] z-5 -ml-1/2">
-        </div>
-      </div>      
-      
-      <!-- Modal -->
-      <div id="modal" class="fixed hidden inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-        <embed id="pdf-viewer" src="" type="application/pdf" width="100%" height="100%">
       </div>
-      
+    </div>
 
- 
-      <a href="welcome.html">
-        <img src="./Assets/shutdown 1.png" alt="image1" class="overlay-image h-[60px] w-[60px] top-[3%] right-[10%] z-index-10" >
-      </a>
-    <a href="./alphabets.html">
-        <img src="./Assets/previous 2.png" alt="image2" class="overlay-image h-[60px] w-[60px] top-[3%] md:right-[70px] right-[110px] z-index-10">
+    <!-- Modal -->
+    <div
+      id="modal"
+      class="fixed hidden inset-0 bg-black bg-opacity-50 flex justify-center items-center"
+    >
+      <embed
+        id="pdf-viewer"
+        src=""
+        type="application/pdf"
+        width="100%"
+        height="100%"
+      />
+    </div>
+
+    <a href="welcome.html">
+      <img
+        src="./Assets/shutdown 1.png"
+        alt="image1"
+        class="overlay-image h-[60px] w-[60px] top-[3%] right-[10%] z-index-10"
+      />
     </a>
-</div>
+    <a href="./alphabets.html">
+      <img
+        src="./Assets/previous 2.png"
+        alt="image2"
+        class="overlay-image h-[60px] w-[60px] top-[3%] md:right-[70px] right-[110px] z-index-10"
+      />
+    </a>
 
+    <script>
+      function openModal(pdfSrc) {
+        document.getElementById("modal").classList.remove("hidden");
+        document.getElementById("pdf-viewer").src = pdfSrc;
+        document.getElementById("learn-section").classList.add("hidden");
+      }
 
-      <script>
-        function openModal(pdfSrc) {
-          document.getElementById('modal').classList.remove('hidden');
-          document.getElementById('pdf-viewer').src = pdfSrc;
+      document.getElementById("modal").addEventListener("click", function (e) {
+        if (e.target.id !== "pdf-viewer") {
+          this.classList.add("hidden");
+          document.getElementById("learn-section").classList.remove("hidden");
         }
-      
-        document.getElementById('modal').addEventListener('click', function() {
-          this.classList.add('hidden');
-        });
-      </script>
+      });
+
+      document.getElementById("sidebar").addEventListener("click", function () {
+        document.getElementById("modal").classList.add("hidden");
+        document.getElementById("learn-section").classList.remove("hidden");
+      });
+    </script>
     <script src="./Scripts/sidebar.js"></script>
-</body>
+  </body>
 </html>
